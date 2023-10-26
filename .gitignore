@@ -1,0 +1,25 @@
+node_modules/
+build/
+/vars
+package-lock.json
+./fronend/node_modules
+frontend/src/config.js
+.pnpm-store/
+
+# dependencies
+.pnp
+.pnp.js
+
+# testing
+fronend/coverage
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+fronend/npm-debug.log*
+fronend/yarn-debug.log*
+fronend/yarn-error.log*

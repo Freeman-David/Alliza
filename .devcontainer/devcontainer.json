@@ -1,0 +1,59 @@
+{
+  "name": "Aliza dev environment",
+  "dockerComposeFile": ["../.docker/docker-compose.yml"],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "eslint.format.enable": true,
+        "eslint.alwaysShowStatus": true,
+        "typescript.validate.enable": true,
+        "editor.tabSize": 4,
+        "editor.detectIndentation": true,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+          "source.organizeImports": true,
+          "source.fixAll": true,
+          "source.trimTrailingWhitespace": true,
+          "source.trimAutoWhitespace": true
+        },
+        "[json][yaml]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[typescript]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[typescriptreact]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "terminal.integrated.profiles.linux": {
+          "zsh": {
+            "path": "zsh"
+          }
+        },
+        "workbench.iconTheme": "vscode-icons"
+      },
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "arcanis.vscode-zipfs",
+        "dbaeumer.vscode-eslint",
+        "wix.vscode-import-cost",
+        "streetsidesoftware.code-spell-checker",
+        "oderwat.indent-rainbow",
+        "ms-azuretools.vscode-docker",
+        "bierner.markdown-preview-github-styles",
+        "yzhang.markdown-all-in-one",
+        "mikestead.dotenv",
+        "csstools.postcss",
+        "bradlc.vscode-tailwindcss",
+        "Orta.vscode-jest",
+        "GitHub.copilot"
+      ]
+    }
+  },
+  "service": "dev",
+  "workspaceFolder": "/workspace",
+  "userEnvProbe": "loginInteractiveShell",
+  "remoteUser": "alizadev"
+}

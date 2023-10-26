@@ -1,0 +1,26 @@
+version: "3"
+services:
+  dev:
+    build:
+      context: ..
+      dockerfile: ./.docker/Dockerfile.dev
+    network_mode: "host"
+    volumes:
+      - ..:/workspace:Z
+    user: alizadev
+    command: "sleep infinity"
+    env_file:
+      - ../.env
+
+  mongodb:
+    image: mongo:latest
+    command: mongod --port 27007
+    ports:
+      - 27007:27007
+    expose:
+      - 27007
+    volumes:
+      - db:/data/db
+
+volumes:
+  db:

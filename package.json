@@ -1,0 +1,39 @@
+{
+  "name": "aliza-project",
+  "version": "1.0.0",
+  "description": "Alliza Platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon backend/server.js",
+    "server": "nodemon backend/server.js",
+    "build-client": "npm start --prefix frontend",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
+    "aws-sdk": "^2.1420.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "busboy": "^1.6.0",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^6.9.0",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.7.4",
+    "socket.io": "^4.7.2",
+    "xss": "^1.0.14"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.20"
+  }
+}
